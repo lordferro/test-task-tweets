@@ -30,7 +30,6 @@ export const Button = styled.button`
 `;
 
 export const StyledLink = styled(NavLink)`
-  cursor: pointer;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
@@ -49,13 +48,7 @@ export const StyledLink = styled(NavLink)`
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  &.following {
-    background: #5cd3a8;
-  }
-  &.waiting {
-    cursor: wait;
-  }
+
   &.underConstruction {
     cursor: wait;
   }
