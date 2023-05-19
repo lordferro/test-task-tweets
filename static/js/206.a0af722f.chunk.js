@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunktest_task_tweets=self.webpackChunktest_task_tweets||[]).push([[206],{1206:function(t,e,s){s.r(e);var n=s(7794),a=s(184);e.default=function(){return(0,a.jsx)(n.z,{className:"underConstruction",children:"We creating app right now..."})}}}]);
-//# sourceMappingURL=206.a0af722f.chunk.js.map
