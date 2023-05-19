@@ -31,7 +31,7 @@ const Tweets = () => {
     const value = e.target.value;
     setFilter(value);
   };
-  console.log(usersToShow);
+
   if (isLoading) {
     return <StyledLink>loading</StyledLink>;
   }
