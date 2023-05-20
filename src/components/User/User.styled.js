@@ -17,21 +17,43 @@ export const Wrapper = styled.div`
 
   background-image: url(${require('../img/background/bg1.png')}),
     url(${require('../img/background/bg2.png')}),
-    url(${require('../img/background/Ellipse.png')}),
-    url(${require('../img/background/Rectangle 1.png')}),
+  
     linear-gradient(114.99deg, #471ca9 -0.99%, #5736a3 54.28%, #4b2a99 78.99%);
 
   background-repeat: no-repeat;
-  background-size: auto, auto, 114px;
-  background-position: top 28px center, top 20px left 20px, center, center,
-    center;
+  background-size: auto, auto;
+  background-position: top 28px center, top 20px left 20px, center;
+
+  &::before {
+    content: '';
+    display: flex;
+    width: 100%;
+    height: 8px;
+    box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
+      inset 0px -1.71846px 3.43693px #ae7be3,
+      inset 0px 3.43693px 2.5777px #fbf8ff;
+    background-color: #ebd8ff;
+    position: relative;
+    top: 222px;
+  }
 `;
 
 export const Avatar = styled.img`
+box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  padding: 8px;
+  background: #fbf8ff;
+
   border-radius: 50%;
-margin-top: 185px;
+  margin-top: 178px;
   margin-bottom: 26px;
-  
+  z-index: 1;
+
+  box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
+    inset 0px -2.19582px 4.39163px #ae7be3,
+    inset 0px 4.39163px 3.29372px #fbf8ff;
+  border-radius: 50%;
 `;
 
 export const Text = styled.p`
@@ -41,6 +63,7 @@ export const Text = styled.p`
   color: #ebd8ff;
   &.first {
     margin-bottom: 16px;
+   
   }
-`;
 
+`;
