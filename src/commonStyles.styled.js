@@ -30,7 +30,7 @@ export const Button = styled.button`
   display: block;
 
   background: #ebd8ff;
-
+&:hover{opacity:0.8}
   &.following {
     background: #5cd3a8;
   }
